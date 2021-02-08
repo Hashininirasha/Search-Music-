@@ -13,7 +13,7 @@
     <div class="row">
 
         <div class="col-md-12">
-            Results
+            <app-result></app-result>
         </div>
     </div>
 </div>    
@@ -23,10 +23,12 @@
 
 
     import SearchArea from './Searcharea.vue'
+    import ResultArea from './Resultarea.vue'
 
     export default{
         components:{
             'app-search':SearchArea
+            'app-result':ResultArea
         }
     }
 
