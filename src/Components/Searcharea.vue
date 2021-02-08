@@ -10,8 +10,9 @@
 <script>
 export default {
     methods:{
-        keypress(){
-            
+        keypress(event){
+            var key = event.target.value;
+            console.log(key)
         }
     }
     
