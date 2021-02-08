@@ -1,19 +1,21 @@
 <template>
-  <div id="app">
+  <div>
      
-    <h1>{{ msg }}</h1>
+    <app-Navbar></app-Navbar>
+
     
   </div>
 </template>
 
 <script>
+import Navbar from './Components/Navbar.vue'
 export default {
-  name: 'app',
-  data () {
-    return {
-      msg: 'Hello JS'
-    }
-  }
+ 
+ components:{
+   "app-Navbar":Navbar
+
+
+ }
 }
 </script>
 
