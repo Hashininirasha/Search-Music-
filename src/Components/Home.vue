@@ -27,8 +27,8 @@
 
     export default{
         components:{
-            'app-search':SearchArea
-            'app-result':ResultArea
+            'app-search':SearchArea,
+            'app-result':ResultArea,
         }
     }
 
