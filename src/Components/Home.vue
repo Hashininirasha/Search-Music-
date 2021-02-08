@@ -4,13 +4,8 @@
             <form class="form-horizontal">
                 <fieldset>
                 <legend>Music App</legend>
-                
-                    <div class="form-group">
-                        <label for="inputEmail" class="col-lg-2 control-label">Search Music</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputEmail" placeholder="Type here">
-                        </div>
-                    </div>
+                <app-search></app-search>
+                    
             </fieldset>
             </form>
     </div>
@@ -25,9 +20,18 @@
 </template>
 
 <script>
-export default {
+
+
+    import SearchArea from './Searcharea.vue'
+
+    export default{
+        components:{
+            'app-search':SearchArea
+        }
+    }
+
     
-}
+
 </script>
 
 <style scoped>
