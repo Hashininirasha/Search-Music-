@@ -14,6 +14,7 @@
 
         <div class="col-md-12">
             <app-result></app-result>
+            {{results}}
         </div>
     </div>
 </div>    
@@ -26,6 +27,12 @@
     import ResultArea from './Resultarea.vue'
 
     export default{
+
+        data(){
+            return{
+                results:[]
+            }
+        },
         components:{
             'app-search':SearchArea,
             'app-result':ResultArea,
