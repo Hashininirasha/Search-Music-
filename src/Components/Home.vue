@@ -4,7 +4,7 @@
             <form class="form-horizontal">
                 <fieldset>
                 <legend>Music App</legend>
-                <app-search></app-search>
+                <app-search @newdataset = 'results= $event'></app-search>
                     
             </fieldset>
             </form>
