@@ -8,11 +8,20 @@
 </template>
 
 <script>
+
+import axios from 'axios';
+
 export default {
     methods:{
         keypress(event){
             var key = event.target.value;
-            console.log(key)
+            axios.get("https://api.mixcloud.com/search/?q="+key+"&amp;type=cloudcast")
+                .then(response=>{
+                    console.log(response.data)
+                })
+                .catch(e=>{
+                    this.error.push(e)
+                })
         }
     }
     
