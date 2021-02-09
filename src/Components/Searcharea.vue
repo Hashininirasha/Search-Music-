@@ -31,6 +31,7 @@ export default {
                 .catch(e=>{
                     this.error.push(e)
                 })
+                this.$emit('newdataset',this.newset);
         }
     }
     
