@@ -2,7 +2,7 @@
 <div>
     <h2>Results from ResultArea Component</h2>
      <div class="row carousel-row">
-        <div class="col-xs-8 col-xs-offset-2 slide-row" slide-row>
+        <div class="col-xs-8 col-xs-offset-2 slide-row">
             <div id="carousel-1" class="carousel slide slide-carousel" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="item active">
@@ -96,6 +96,7 @@ export default {
     .slide-content::-webkit-scrollbar-thumb:vertical {
         margin: 5px;
         background-color: #999;
+        
        
     }
     .slide-content::-webkit-scrollbar-button:start:decrement,
