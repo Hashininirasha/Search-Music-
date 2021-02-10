@@ -6,7 +6,7 @@
             <div id="carousel-1" class="carousel slide slide-carousel" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img v-bind:src="res.album.images[0].url" alt="Image">
+                        <img src=" " alt="Image">
                     </div>
                       </div>
             </div>
@@ -19,6 +19,10 @@
             <div class="slide-footer">
                 <span class="pull-right buttons">
                     <button class="btn btn-sm btn-default"><i class="fa fa-fw fa-eye"></i> Show More</button>
+                </span>
+                </div>
+        </div>
+     </div>
 </div>
 </template>
 
@@ -46,7 +50,7 @@ export default {
     }
     .slide-carousel {
         width: 20%;
-        float: left;
+        
         display: inline-block;
     }
     .slide-carousel .carousel-indicators {
@@ -92,7 +96,7 @@ export default {
     .slide-content::-webkit-scrollbar-thumb:vertical {
         margin: 5px;
         background-color: #999;
-        -webkit-border-radius: 5px;
+       
     }
     .slide-content::-webkit-scrollbar-button:start:decrement,
     .slide-content::-webkit-scrollbar-button:end:increment {
